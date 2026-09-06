@@ -9,7 +9,7 @@
 **B2B Products Built End to End — Architecture to Production**
 
 <a href="https://aimsystem.in/">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3200&pause=1200&color=C084FC&center=true&vCenter=true&width=680&height=65&lines=Hi%2C+I'm+Ankit+Panicker.;I+build+complete+B2B+products.;AI+%2B+Voice+%2B+APIs+%2B+Infrastructure;Architecture+%E2%86%92+Build+%E2%86%92+Deploy+%E2%86%92+Operate" alt="Hi, I'm Ankit Panicker. I build complete B2B products, from architecture to operations." />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3200&pause=1200&color=C084FC&center=true&vCenter=true&width=680&height=65&lines=Hi%2C+I'm+Ankit+Panicker.;I+build+complete+B2B+products.;AI+%2B+Voice+%2B+APIs+%2B+Infrastructure;Architecture+%E2%86%92+Build+%E2%86%92+Deploy+%E2%86%92+Operate" alt="Hi, I'm Ankit Panicker. I build complete B2B products from architecture to operations." />
 </a>
 
 [![Website](https://img.shields.io/badge/AIM_SYSTEMS-711C91?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aimsystem.in/)
@@ -19,7 +19,7 @@
 
 <br />
 
-[About](#about) · [Stack](#stack) · [Projects](#projects) · [Principles](#principles) · [Activity](#activity) · [Contact](#contact)
+[About](#about) · [Technologies](#technologies) · [Projects](#projects) · [Principles](#principles) · [Activity](#activity) · [Contact](#contact)
 
 </div>
 
@@ -75,28 +75,72 @@ const ankitPanicker = {
 
 </details>
 
-<a id="stack"></a>
+<a id="technologies"></a>
 
-## 🛠️ When I code, I rely on
+## 🛠️ Technologies I work with
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat&logo=githubactions&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST_APIs-00897B?style=flat)
-![SDKs](https://img.shields.io/badge/SDKs-2563EB?style=flat)
-![CLI](https://img.shields.io/badge/CLI_Tools-475569?style=flat)
-![MCP](https://img.shields.io/badge/MCP-7C3AED?style=flat)
-![STT](https://img.shields.io/badge/STT-EA580C?style=flat)
-![LLMs](https://img.shields.io/badge/LLMs-9333EA?style=flat)
-![TTS](https://img.shields.io/badge/TTS-DB2777?style=flat)
-![RAG](https://img.shields.io/badge/RAG-059669?style=flat)
+<table>
+  <tr>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=python" width="48" alt="Python" />
+      <br /><sub><b>Python</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=ts" width="48" alt="TypeScript" />
+      <br /><sub><b>TypeScript</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=react" width="48" alt="React" />
+      <br /><sub><b>React</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=fastapi" width="48" alt="FastAPI" />
+      <br /><sub><b>FastAPI</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=postgres" width="48" alt="PostgreSQL" />
+      <br /><sub><b>PostgreSQL</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=redis" width="48" alt="Redis" />
+      <br /><sub><b>Redis</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=docker" width="48" alt="Docker" />
+      <br /><sub><b>Docker</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=kubernetes" width="48" alt="Kubernetes" />
+      <br /><sub><b>Kubernetes</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=terraform" width="48" alt="Terraform" />
+      <br /><sub><b>Terraform</b></sub>
+    </td>
+    <td align="center" width="100">
+      <img src="https://skillicons.dev/icons?i=githubactions" width="48" alt="GitHub Actions" />
+      <br /><sub><b>GitHub Actions</b></sub>
+    </td>
+  </tr>
+</table>
+
+**Interfaces & workflows**
+
+![REST APIs](https://img.shields.io/badge/REST_APIs-00897B?style=flat-square)
+![SDKs](https://img.shields.io/badge/SDKs-2563EB?style=flat-square)
+![CLI Tools](https://img.shields.io/badge/CLI_Tools-475569?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-7C3AED?style=flat-square)
+![Queues](https://img.shields.io/badge/Queues-EA580C?style=flat-square)
+![Workers](https://img.shields.io/badge/Workers-BE185D?style=flat-square)
+
+**AI integration**
+
+![STT](https://img.shields.io/badge/Speech_to_Text-EA580C?style=flat-square)
+![LLMs](https://img.shields.io/badge/Language_Models-9333EA?style=flat-square)
+![TTS](https://img.shields.io/badge/Text_to_Speech-DB2777?style=flat-square)
+![RAG](https://img.shields.io/badge/RAG-059669?style=flat-square)
 
 <details>
 <summary><b>📂 Explore my end-to-end capabilities</b></summary>
@@ -197,7 +241,7 @@ and a Cloudflare Worker for CV uploads.
 <td width="50%" valign="top">
 
 <a href="https://aimstudio.co.in/">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:210D19,100:9D174D&height=170&text=APEX%20CONNECT&fontSize=28&fontColor=FFFFFF&fontAlignY=40&desc=ANKIT%20PANICKER%20%2F%2F%20PRODUCT&descSize=11&descAlignY=67" alt="APEX Connect — a product created by Ankit Panicker — visit website" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:210D19,100:9D174D&height=170&text=APEX%20CONNECT&fontSize=28&fontColor=FFFFFF&fontAlignY=40&desc=ANKIT%20PANICKER%20%2F%2F%20PRODUCT&descSize=11&descAlignY=67" alt="APEX Connect — created by Ankit Panicker — visit website" />
 </a>
 
 **Created at AIM Systems**
@@ -247,6 +291,23 @@ Explore APEX Connect through its product website.
 - Use queues, retries, and idempotency deliberately.
 - Build observability and maintainability into the product.
 - Leave the customer with a system they can operate.
+
+<details>
+<summary><b>🔧 Questions I ask beyond the feature</b></summary>
+
+<br />
+
+```text
+[?] What happens when a dependency fails?
+[?] Can a retry duplicate a business action?
+[?] Where is the tenant boundary enforced?
+[?] Can the team diagnose failures from telemetry?
+[?] How does deployment roll back?
+[?] What does this cost as usage grows?
+[?] Can someone else operate it after handover?
+```
+
+</details>
 
 <a id="activity"></a>
 
