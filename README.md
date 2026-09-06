@@ -2,23 +2,17 @@
 
 <div align="center">
 
-# ANKIT PANICKER
+![Ankit Panicker — CTO & AI Systems Architect](./assets/profile-header.svg)
 
-### CTO & AI Systems Architect · AIM Systems
+**B2B SaaS · Real-Time AI & Voice · Distributed Systems · Platform Reliability**
 
-**Architecture to production. Ownership through operations.**
+[![AIM Systems](https://img.shields.io/badge/AIM_SYSTEMS-075985?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aimsystem.in/)
+[![APEX Connect](https://img.shields.io/badge/APEX_CONNECT-0369A1?style=for-the-badge)](https://aimstudio.co.in/)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-0F172A?style=for-the-badge&logo=react&logoColor=38BDF8)](https://theankitpanicker.web.app/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/ankit-panicker/)
+[![Email](https://img.shields.io/badge/CONTACT-0284C7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit@aimsystem.in)
 
-B2B SaaS · Real-Time AI & Voice · Distributed Systems · Platform Reliability
-
-![Animated introduction](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&color=38BDF8&center=true&vCenter=true&width=720&lines=Building+complete+B2B+products.;Real-time+AI.+Recoverable+workflows.;From+business+requirements+to+operations.)
-
-**[AIM Systems](https://aimsystem.in/)** ·
-**[APEX Connect](https://aimstudio.co.in/)** ·
-**[Portfolio](https://theankitpanicker.web.app/)** ·
-**[LinkedIn](https://www.linkedin.com/in/ankit-panicker/)** ·
-**[Email](mailto:ankit@aimsystem.in)**
-
-[Profile](#profile) · [Engineering](#engineering) · [Architecture](#architecture) · [Technology](#technology) · [Selected Work](#work) · [Contact](#contact)
+[Profile](#profile) · [Engineering](#engineering) · [Technology](#technology) · [Architecture](#architecture) · [Selected Work](#work) · [Contact](#contact)
 
 </div>
 
@@ -123,215 +117,46 @@ DEPLOY ---> OBSERVE ---> OPERATE ---> IMPROVE
 
 </details>
 
-<a id="architecture"></a>
-
-## Designed for execution. Engineered for recovery.
-
-![Animated architecture heading](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1800&color=38BDF8&vCenter=true&width=720&lines=Accept+deliberately.+Execute+predictably.;Bound+concurrency.+Make+retries+safe.;Observe+failures.+Design+the+recovery.)
-
-A reference architecture for asynchronous AI and business workflows:
-explicit admission decisions, durable execution, bounded concurrency,
-and recoverable failure paths.
-
-```mermaid
-flowchart TB
-    subgraph ADMISSION["01 / ADMISSION"]
-        A["API / Webhook / Event"] --> B["Authenticate tenant<br/>Authorize operation"]
-        B --> C{"Quota and capacity<br/>available?"}
-        C -->|"Accept"| D["Persist job + outbox<br/>Stable idempotency key"]
-        C -->|"Reject / defer"| BP["Backpressure<br/>Rate limit / Retry-After"]
-    end
-
-    subgraph EXECUTION["02 / DURABLE EXECUTION"]
-        Q[("Durable queue")] --> W["Worker / Supervisor<br/>Bounded concurrency"]
-        W --> CLAIM{"Atomically claim job<br/>Inspect execution state"}
-        CLAIM -->|"Completed"| EXISTING["Use persisted result"]
-        CLAIM -->|"Claim acquired"| ROUTE["Provider / Domain routing<br/>Deadline + Circuit breaker"]
-        CLAIM -->|"In progress"| DEFER["Defer duplicate<br/>Lease / recovery policy"]
-        ROUTE --> SERVICE["External AI<br/>or domain service"]
-    end
-
-    subgraph RECOVERY["03 / FAILURE & RECOVERY"]
-        CLASSIFY{"Classify outcome"}
-        RETRY["Bounded retry<br/>Backoff + Jitter"]
-        FALLBACK["Approved fallback<br/>Alternate provider / reduced capability"]
-        DLQ[("DLQ / Review queue")]
-        RECON["Inspect and reconcile<br/>Resolve uncertain side effects"]
-        CLASSIFY -->|"Safe to retry"| RETRY
-        CLASSIFY -->|"Permanent / exhausted / uncertain"| DLQ
-        DLQ --> RECON
-    end
-
-    subgraph COMPLETION["04 / COMPLETION & OPERATIONS"]
-        RESULT[("Persist result<br/>Completion state + delivery outbox")]
-        ACK["Acknowledge job<br/>After durable completion"]
-        DELIVERY["Deliver result<br/>API / Event / Notification"]
-        OBS["Traces / Metrics / Logs / Audit"]
-        RESULT --> ACK
-        RESULT -->|"Outbox dispatcher"| DELIVERY
-    end
-
-    D -->|"Outbox dispatcher"| Q
-    SERVICE -->|"Success"| RESULT
-    SERVICE -->|"Failure / timeout"| CLASSIFY
-    ROUTE -->|"Unavailable before execution"| FALLBACK
-    FALLBACK -->|"Success"| RESULT
-    FALLBACK -->|"Failure"| CLASSIFY
-    RETRY -->|"Delayed requeue"| Q
-    RECON -->|"Replay approved"| Q
-    EXISTING --> ACK
-
-    B -.-> OBS
-    W -.-> OBS
-    CLASSIFY -.-> OBS
-    RESULT -.-> OBS
-
-    classDef entry fill:#0F172A,stroke:#38BDF8,color:#F8FAFC,stroke-width:2px
-    classDef process fill:#102A43,stroke:#0EA5E9,color:#F8FAFC,stroke-width:1.5px
-    classDef decision fill:#123B56,stroke:#7DD3FC,color:#F8FAFC,stroke-width:2px
-    classDef storage fill:#0C4A6E,stroke:#38BDF8,color:#F8FAFC,stroke-width:2px
-    classDef recovery fill:#172554,stroke:#60A5FA,color:#F8FAFC,stroke-width:1.5px
-    classDef observe fill:#083344,stroke:#22D3EE,color:#ECFEFF,stroke-width:2px
-
-    class A entry
-    class B,D,W,ROUTE,SERVICE,EXISTING,ACK,DELIVERY process
-    class C,CLAIM,CLASSIFY decision
-    class Q,RESULT storage
-    class BP,DEFER,RETRY,FALLBACK,DLQ,RECON recovery
-    class OBS observe
-
-    style ADMISSION fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
-    style EXECUTION fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
-    style RECOVERY fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
-    style COMPLETION fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
-```
-
-<details>
-<summary><b>The engineering contract behind the diagram</b></summary>
-
-- **Admission is explicit:** Enforce tenant permissions, quotas, and capacity before accepting work.
-- **Acceptance is durable:** Persist the job before reporting acceptance; dispatch through an outbox.
-- **Execution has an owner:** Use atomic claims and a defined policy for expired leases and concurrent delivery.
-- **Retries preserve identity:** Keep stable operation keys and distinguish safe retries from uncertain outcomes.
-- **Work is bounded:** Apply concurrency limits, deadlines, and retry budgets.
-- **Completion survives failure:** Persist results before acknowledging jobs.
-- **Delivery is recoverable:** Use an outbox and idempotent consumers for downstream notifications or events.
-- **Recovery is controlled:** Inspect failed work before replay and apply fallbacks only where domain rules permit.
-
-At-least-once delivery requires deliberate duplicate handling.
-External side effects need provider idempotency or reconciliation;
-a queue alone cannot guarantee exactly-once execution.
-
-This is a reference design. Implementation varies with the product,
-its dependencies, and its operational requirements.
-
-</details>
-
 <a id="technology"></a>
 
 ## Engineering toolkit
 
-### Core application and data technologies
+<div align="center">
 
-<table>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=python" width="46" alt="Python" /><br /><sub><b>Python</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=fastapi" width="46" alt="FastAPI" /><br /><sub><b>FastAPI</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=redis" width="46" alt="Redis" /><br /><sub><b>Redis</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=ts" width="46" alt="TypeScript" /><br /><sub><b>TypeScript</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=react" width="46" alt="React" /><br /><sub><b>React</b></sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=nodejs" width="46" alt="Node.js" /><br /><sub><b>Node.js</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=postgres" width="46" alt="PostgreSQL" /><br /><sub><b>PostgreSQL</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=mysql" width="46" alt="MySQL" /><br /><sub><b>MySQL</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=nextjs" width="46" alt="Next.js" /><br /><sub><b>Next.js</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=tailwind" width="46" alt="Tailwind CSS" /><br /><sub><b>Tailwind CSS</b></sub>
-</td>
-</tr>
-</table>
+<img src="./assets/tech-sphere.svg" width="480" alt="Ankit Panicker's rotating technology sphere: Python, TypeScript, React, FastAPI, Redis, PostgreSQL, Docker, Kubernetes, Node.js, Terraform, GitHub Actions, Next.js, MySQL, Grafana, Prometheus, Cloudflare, PyTorch, and Nginx" />
 
-### Platform, delivery and observability
+**Tools selected for the problem. Architecture shaped by the constraints.**
 
-<table>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=docker" width="46" alt="Docker" /><br /><sub><b>Docker</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=githubactions" width="46" alt="GitHub Actions" /><br /><sub><b>GitHub Actions</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=prometheus" width="46" alt="Prometheus" /><br /><sub><b>Prometheus</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=grafana" width="46" alt="Grafana" /><br /><sub><b>Grafana</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=nginx" width="46" alt="Nginx" /><br /><sub><b>Nginx</b></sub>
-</td>
-</tr>
-</table>
+</div>
 
-### Additional working toolkit
+### Applications and data
 
-<table>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=go" width="46" alt="Go" /><br /><sub><b>Go</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=kubernetes" width="46" alt="Kubernetes" /><br /><sub><b>Kubernetes / AKS</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=terraform" width="46" alt="Terraform" /><br /><sub><b>Terraform</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=azure" width="46" alt="Azure" /><br /><sub><b>Azure</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=cloudflare" width="46" alt="Cloudflare" /><br /><sub><b>Cloudflare</b></sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=pytorch" width="46" alt="PyTorch" /><br /><sub><b>PyTorch</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=threejs" width="46" alt="Three.js" /><br /><sub><b>Three.js</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=vite" width="46" alt="Vite" /><br /><sub><b>Vite</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=firebase" width="46" alt="Firebase" /><br /><sub><b>Firebase</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=express" width="46" alt="Express" /><br /><sub><b>Express</b></sub>
-</td>
-</tr>
-</table>
+![Python](https://img.shields.io/badge/Python-0F172A?style=flat-square&logo=python&logoColor=38BDF8)
+![FastAPI](https://img.shields.io/badge/FastAPI-0F172A?style=flat-square&logo=fastapi&logoColor=38BDF8)
+![TypeScript](https://img.shields.io/badge/TypeScript-0F172A?style=flat-square&logo=typescript&logoColor=38BDF8)
+![JavaScript](https://img.shields.io/badge/JavaScript-0F172A?style=flat-square&logo=javascript&logoColor=38BDF8)
+![React](https://img.shields.io/badge/React-0F172A?style=flat-square&logo=react&logoColor=38BDF8)
+![Next.js](https://img.shields.io/badge/Next.js-0F172A?style=flat-square&logo=nextdotjs&logoColor=38BDF8)
+![Node.js](https://img.shields.io/badge/Node.js-0F172A?style=flat-square&logo=nodedotjs&logoColor=38BDF8)
+![Go](https://img.shields.io/badge/Go-0F172A?style=flat-square&logo=go&logoColor=38BDF8)
+![Redis](https://img.shields.io/badge/Redis-0F172A?style=flat-square&logo=redis&logoColor=38BDF8)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0F172A?style=flat-square&logo=postgresql&logoColor=38BDF8)
+![MySQL](https://img.shields.io/badge/MySQL-0F172A?style=flat-square&logo=mysql&logoColor=38BDF8)
 
-**AI, interfaces and runtime**
+### Platform and operations
+
+![Docker](https://img.shields.io/badge/Docker-0F172A?style=flat-square&logo=docker&logoColor=38BDF8)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-0F172A?style=flat-square&logo=kubernetes&logoColor=38BDF8)
+![Terraform](https://img.shields.io/badge/Terraform-0F172A?style=flat-square&logo=terraform&logoColor=38BDF8)
+![Azure](https://img.shields.io/badge/Azure-0F172A?style=flat-square)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-0F172A?style=flat-square&logo=cloudflare&logoColor=38BDF8)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0F172A?style=flat-square&logo=githubactions&logoColor=38BDF8)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-0F172A?style=flat-square&logo=opentelemetry&logoColor=38BDF8)
+![Prometheus](https://img.shields.io/badge/Prometheus-0F172A?style=flat-square&logo=prometheus&logoColor=38BDF8)
+![Grafana](https://img.shields.io/badge/Grafana-0F172A?style=flat-square&logo=grafana&logoColor=38BDF8)
+![Nginx](https://img.shields.io/badge/Nginx-0F172A?style=flat-square&logo=nginx&logoColor=38BDF8)
+
+### AI, voice and developer interfaces
 
 ![STT](https://img.shields.io/badge/STT-075985?style=flat-square)
 ![LLMs](https://img.shields.io/badge/LLMs-1D4ED8?style=flat-square)
@@ -343,10 +168,9 @@ its dependencies, and its operational requirements.
 ![SDKs](https://img.shields.io/badge/SDKs-1D4ED8?style=flat-square)
 ![CLI](https://img.shields.io/badge/CLI-334155?style=flat-square)
 ![MCP](https://img.shields.io/badge/MCP-0369A1?style=flat-square)
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-075985?style=flat-square)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-0E7490?style=flat-square)
-![CUDA](https://img.shields.io/badge/CUDA-0369A1?style=flat-square)
-![Playwright](https://img.shields.io/badge/Playwright-1D4ED8?style=flat-square)
+![PyTorch](https://img.shields.io/badge/PyTorch-0369A1?style=flat-square)
+![CUDA](https://img.shields.io/badge/CUDA-075985?style=flat-square)
 
 ### Depth of practice
 
@@ -473,51 +297,147 @@ unit-test depth varies by project.
 
 </details>
 
+<a id="architecture"></a>
+
+## Designed for execution. Engineered for recovery.
+
+**Accept deliberately. Execute predictably. Recover safely.**
+
+A reference architecture for asynchronous AI and business workflows:
+explicit admission decisions, durable execution, bounded concurrency,
+and recoverable failure paths.
+
+```mermaid
+flowchart TB
+    subgraph ADMISSION["01 / ADMISSION"]
+        A["API / Webhook / Event"] --> B["Authenticate tenant<br/>Authorize operation"]
+        B --> C{"Quota and capacity<br/>available?"}
+        C -->|"Accept"| D["Persist job + outbox<br/>Stable idempotency key"]
+        C -->|"Reject / defer"| BP["Backpressure<br/>Rate limit / Retry-After"]
+    end
+
+    subgraph EXECUTION["02 / DURABLE EXECUTION"]
+        Q[("Durable queue")] --> W["Worker / Supervisor<br/>Bounded concurrency"]
+        W --> CLAIM{"Atomically claim job<br/>Inspect execution state"}
+        CLAIM -->|"Completed"| EXISTING["Use persisted result"]
+        CLAIM -->|"Claim acquired"| ROUTE["Provider / Domain routing<br/>Deadline + Circuit breaker"]
+        CLAIM -->|"In progress"| DEFER["Defer duplicate<br/>Lease / recovery policy"]
+        ROUTE --> SERVICE["External AI<br/>or domain service"]
+    end
+
+    subgraph RECOVERY["03 / FAILURE & RECOVERY"]
+        CLASSIFY{"Classify outcome"}
+        RETRY["Bounded retry<br/>Backoff + Jitter"]
+        FALLBACK["Approved fallback<br/>Alternate provider / reduced capability"]
+        DLQ[("DLQ / Review queue")]
+        RECON["Inspect and reconcile<br/>Resolve uncertain side effects"]
+        CLASSIFY -->|"Safe to retry"| RETRY
+        CLASSIFY -->|"Permanent / exhausted / uncertain"| DLQ
+        DLQ --> RECON
+    end
+
+    subgraph COMPLETION["04 / COMPLETION & OPERATIONS"]
+        RESULT[("Persist result<br/>Completion state + delivery outbox")]
+        ACK["Acknowledge job<br/>After durable completion"]
+        DELIVERY["Deliver result<br/>API / Event / Notification"]
+        OBS["Traces / Metrics / Logs / Audit"]
+        RESULT --> ACK
+        RESULT -->|"Outbox dispatcher"| DELIVERY
+    end
+
+    D -->|"Outbox dispatcher"| Q
+    SERVICE -->|"Success"| RESULT
+    SERVICE -->|"Failure / timeout"| CLASSIFY
+    ROUTE -->|"Unavailable before execution"| FALLBACK
+    FALLBACK -->|"Success"| RESULT
+    FALLBACK -->|"Failure"| CLASSIFY
+    RETRY -->|"Delayed requeue"| Q
+    RECON -->|"Replay approved"| Q
+    EXISTING --> ACK
+
+    B -.-> OBS
+    W -.-> OBS
+    CLASSIFY -.-> OBS
+    RESULT -.-> OBS
+
+    classDef entry fill:#0F172A,stroke:#38BDF8,color:#F8FAFC,stroke-width:2px
+    classDef process fill:#102A43,stroke:#0EA5E9,color:#F8FAFC,stroke-width:1.5px
+    classDef decision fill:#123B56,stroke:#7DD3FC,color:#F8FAFC,stroke-width:2px
+    classDef storage fill:#0C4A6E,stroke:#38BDF8,color:#F8FAFC,stroke-width:2px
+    classDef recovery fill:#172554,stroke:#60A5FA,color:#F8FAFC,stroke-width:1.5px
+    classDef observe fill:#083344,stroke:#22D3EE,color:#ECFEFF,stroke-width:2px
+
+    class A entry
+    class B,D,W,ROUTE,SERVICE,EXISTING,ACK,DELIVERY process
+    class C,CLAIM,CLASSIFY decision
+    class Q,RESULT storage
+    class BP,DEFER,RETRY,FALLBACK,DLQ,RECON recovery
+    class OBS observe
+
+    style ADMISSION fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
+    style EXECUTION fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
+    style RECOVERY fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
+    style COMPLETION fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
+```
+
+<details>
+<summary><b>The engineering contract behind the diagram</b></summary>
+
+- **Admission is explicit:** Enforce tenant permissions, quotas, and capacity before accepting work.
+- **Acceptance is durable:** Persist the job before reporting acceptance; dispatch through an outbox.
+- **Execution has an owner:** Use atomic claims and a defined policy for expired leases and concurrent delivery.
+- **Retries preserve identity:** Keep stable operation keys and distinguish safe retries from uncertain outcomes.
+- **Work is bounded:** Apply concurrency limits, deadlines, and retry budgets.
+- **Completion survives failure:** Persist results before acknowledging jobs.
+- **Delivery is recoverable:** Use an outbox and idempotent consumers for downstream notifications or events.
+- **Recovery is controlled:** Inspect failed work before replay and apply fallbacks only where domain rules permit.
+
+At-least-once delivery requires deliberate duplicate handling.
+External side effects need provider idempotency or reconciliation;
+a queue alone cannot guarantee exactly-once execution.
+
+This is a reference design. Implementation varies with the product,
+its dependencies, and its operational requirements.
+
+</details>
+
 <a id="work"></a>
 
 ## Selected work
 
-**`CLICK ANY VISUAL TO EXPLORE`**
+**Explore the products and public repositories behind the profile.**
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://aimstudio.co.in/">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,100:075985&height=160&text=APEX%20CONNECT&fontSize=27&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20AI%20%26%20VOICE&descSize=11&descAlignY=66" alt="APEX Connect — visit product website" />
-</a>
+<h3>🎙️ APEX Connect</h3>
 <p><strong>Multi-tenant AI voice &amp; WhatsApp platform</strong></p>
 <p>Real-time voice orchestration, appointment workflows, campaign execution, and control-plane/media-plane separation.</p>
 <p><code>Voice AI</code> <code>Multi-tenancy</code> <code>Orchestration</code></p>
-<p><a href="https://aimstudio.co.in/">Visit product website →</a></p>
+<p><a href="https://aimstudio.co.in/"><strong>Explore product →</strong></a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/mrankitpanicker/apex-ai-shortz">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,100:1E3A8A&height=160&text=APEX%20AI%20SHORTZ&fontSize=27&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20MEDIA%20PIPELINES&descSize=11&descAlignY=66" alt="APEX AI Shortz — explore public repository" />
-</a>
+<h3>🎬 APEX AI Shortz</h3>
 <p><strong>Local AI video generation</strong></p>
 <p>FastAPI API, Redis-backed jobs, GPU workers, and an XTTS, Whisper, and FFmpeg media pipeline.</p>
 <p><code>Python</code> <code>Redis</code> <code>GPU Workers</code></p>
-<p><a href="https://github.com/mrankitpanicker/apex-ai-shortz">Explore repository →</a></p>
+<p><a href="https://github.com/mrankitpanicker/apex-ai-shortz"><strong>Explore repository →</strong></a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/mrankitpanicker/claude4saas">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B1721,100:155E75&height=160&text=CLAUDE4SAAS&fontSize=27&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20DEVELOPER%20TOOLS&descSize=11&descAlignY=66" alt="claude4saas — explore public repository" />
-</a>
+<h3>🧩 claude4saas</h3>
 <p><strong>Claude Code plugin marketplace &amp; agent harness</strong></p>
 <p>Plugin package and documentation covering pipeline agents, execution guards, evaluations, and project bootstrap.</p>
 <p><code>Agents</code> <code>Developer Tools</code> <code>Evaluations</code></p>
-<p><a href="https://github.com/mrankitpanicker/claude4saas">Explore repository →</a></p>
+<p><a href="https://github.com/mrankitpanicker/claude4saas"><strong>Explore repository →</strong></a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/mrankitpanicker/aimsystems">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0F172A,100:0369A1&height=160&text=AIM%20SYSTEMS%20WEB&fontSize=26&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20PUBLIC%20WEB&descSize=11&descAlignY=66" alt="AIM Systems Web — explore public repository" />
-</a>
+<h3>🌐 AIM Systems Web</h3>
 <p><strong>Public website &amp; application surface</strong></p>
 <p>Public pages, Firebase configuration and rules, and a Cloudflare Worker for CV uploads.</p>
 <p><code>Web</code> <code>Firebase</code> <code>Cloudflare</code></p>
-<p><a href="https://github.com/mrankitpanicker/aimsystems">Explore repository →</a></p>
+<p><a href="https://github.com/mrankitpanicker/aimsystems"><strong>Explore repository →</strong></a></p>
 </td>
 </tr>
 </table>
@@ -602,7 +522,5 @@ engagements with UK and European teams**.
 *Architecture to production. Ownership through operations.*
 
 [↑ Back to top](#top)
-
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:075985,100:0F172A&height=100&section=footer)
 
 </div>
