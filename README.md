@@ -2,21 +2,21 @@
 
 <div align="center">
 
-![Ankit Panicker](https://capsule-render.vercel.app/api?type=waving&color=0:020617,50:075985,100:0F172A&height=220&section=header&text=ANKIT%20PANICKER&fontSize=44&fontColor=FFFFFF&animation=fadeIn&fontAlignY=36&desc=CTO%20%26%20AI%20SYSTEMS%20ARCHITECT&descSize=17&descAlignY=57)
-
-# Architecture to production. Ownership through operations.
+# ANKIT PANICKER
 
 ### CTO & AI Systems Architect · AIM Systems
 
-**B2B SaaS · Real-Time AI & Voice · Distributed Systems · Platform Reliability**
+**Architecture to production. Ownership through operations.**
 
-![Animated introduction](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1500&color=38BDF8&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Ankit+Panicker.;I+build+complete+B2B+products.;Real-time+AI.+Recoverable+workflows.;Build+the+product.+Own+the+failure+paths.)
+B2B SaaS · Real-Time AI & Voice · Distributed Systems · Platform Reliability
 
-[![AIM Systems](https://img.shields.io/badge/AIM_SYSTEMS-075985?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aimsystem.in/)
-[![APEX Connect](https://img.shields.io/badge/APEX_CONNECT-0369A1?style=for-the-badge)](https://aimstudio.co.in/)
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-0F172A?style=for-the-badge&logo=react&logoColor=38BDF8)](https://theankitpanicker.web.app/)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/ankit-panicker/)
-[![Email](https://img.shields.io/badge/CONTACT-0284C7?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit@aimsystem.in)
+![Animated introduction](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&color=38BDF8&center=true&vCenter=true&width=720&lines=Building+complete+B2B+products.;Real-time+AI.+Recoverable+workflows.;From+business+requirements+to+operations.)
+
+**[AIM Systems](https://aimsystem.in/)** ·
+**[APEX Connect](https://aimstudio.co.in/)** ·
+**[Portfolio](https://theankitpanicker.web.app/)** ·
+**[LinkedIn](https://www.linkedin.com/in/ankit-panicker/)** ·
+**[Email](mailto:ankit@aimsystem.in)**
 
 [Profile](#profile) · [Engineering](#engineering) · [Architecture](#architecture) · [Technology](#technology) · [Selected Work](#work) · [Contact](#contact)
 
