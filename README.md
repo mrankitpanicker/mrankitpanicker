@@ -1,6 +1,3 @@
-Use this as your profile `README.md`. It adds clickable badges, navigation, and expandable sections—GitHub supports these without JavaScript.
-
-```markdown
 <div align="center">
 
 # Hi, I'm Ankit Panicker 👋
