@@ -1,78 +1,230 @@
-# Ankit Panicker
+Use this as your profile `README.md`. It adds clickable badges, navigation, and expandable sections—GitHub supports these without JavaScript.
 
-**CTO & AI Systems Architect, AIM Systems**
+```markdown
+<div align="center">
 
-**B2B Products Built End to End — Architecture to Production**
+# Hi, I'm Ankit Panicker 👋
 
-Creator of [APEX Connect](https://aimstudio.co.in/).
+### CTO & AI Systems Architect · AIM Systems
 
-I build complete B2B products from business requirements and product architecture through user experience, frontend applications, backend services, APIs, integrations, AI capabilities, infrastructure, deployment, observability, and ongoing operations.
+**B2B products built end to end — architecture to production.**
 
-## What I build
+I turn business requirements into complete products:
+<br />
+interfaces, APIs, AI workflows, infrastructure, and operations.
 
-- B2B SaaS platforms
-- API-first products and system integrations
-- AI-enabled workflows, real-time voice systems, and automation
-- Internal platforms, developer tools, and operational tooling
-- Cloud infrastructure and repeatable delivery systems
+Creator of **[APEX Connect](https://aimstudio.co.in/)**
 
-## End-to-end capabilities
+[![AIM Systems](https://img.shields.io/badge/AIM_Systems-Visit_Website-0F172A?style=for-the-badge)](https://aimsystem.in/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Explore-2563EB?style=for-the-badge)](https://theankitpanicker.web.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/ankit-panicker/)
+[![Email](https://img.shields.io/badge/Email-Let’s_Talk-059669?style=for-the-badge)](mailto:ankit@aimsystem.in)
 
-- Product discovery and systems architecture
-- User experience and frontend applications
-- Backend services and data models
-- REST APIs, SDKs, CLI tools, and MCP interfaces
-- STT, LLM, TTS, and RAG integration
-- Multi-tenant architecture and access boundaries
-- Redis-backed queues, workers, and workflow orchestration
-- Docker, Kubernetes, Terraform, and CI/CD
-- Logging, metrics, monitoring, and operational documentation
+[About](#about) · [Capabilities](#capabilities) · [Stack](#stack) · [Public Work](#public-work) · [Contact](#contact)
 
-## Engineering principles
+</div>
 
-- Connect technical decisions to business outcomes.
-- Design for failure, not only the happy path.
-- Treat multi-tenancy as a security boundary.
-- Use queues, retries, and idempotency deliberately.
-- Build observability and maintainability into the product.
-- Leave the customer with a system they can operate.
+---
 
-## Core stack
+## About
 
-**Application engineering:** Python, TypeScript, React, FastAPI
+~~~python
+class AnkitPanicker:
+    role = "CTO & AI Systems Architect"
+    company = "AIM Systems"
+    product = "APEX Connect"
 
-**Data and workflows:** PostgreSQL, Redis, queues, and workers
+    focus = [
+        "B2B SaaS and API-first products",
+        "AI workflows and real-time voice systems",
+        "Multi-tenant platforms",
+        "Developer tools and operational automation",
+    ]
 
-**Platform engineering:** Docker, Kubernetes, Terraform, and CI/CD
+    ownership = (
+        "Requirements → Architecture → Build → Deploy → Operate"
+    )
 
-**AI integration:** Speech-to-text, language models, text-to-speech, and retrieval-augmented generation
+    principle = "Leave the customer with a system they can operate."
+~~~
 
-## Selected public work
+I work across product discovery, user experience, frontend applications,
+backend services, AI integration, and platform engineering.
 
-### [APEX AI Shortz](https://github.com/mrankitpanicker/apex-ai-shortz)
+My focus is the complete product: how it works, how it fails,
+how it recovers, and how a team operates it over time.
 
-A public Python project for automated short-form video generation using local AI models.
+## Capabilities
 
-The repository includes a FastAPI API, Redis-backed job queue, GPU worker, desktop interface, Docker configuration, monitoring components, tests, and documentation for an XTTS, Whisper, and FFmpeg media pipeline.
+**Expand a section to explore.**
 
-### [claude4saas](https://github.com/mrankitpanicker/claude4saas)
+<details>
+<summary><b>🧭 Product & systems architecture</b></summary>
+
+<br />
+
+- Translate business requirements into product and system boundaries.
+- Design API-first services, data models, and integration contracts.
+- Define multi-tenant architecture and access boundaries.
+- Evaluate performance, cost, reliability, and operational trade-offs.
+
+</details>
+
+<details>
+<summary><b>🛠️ Full-stack product engineering</b></summary>
+
+<br />
+
+- Build user experiences and frontend applications.
+- Develop backend services and REST APIs.
+- Create SDKs, CLI tools, and MCP interfaces.
+- Connect internal systems and third-party services.
+- Build internal platforms and operational tooling.
+
+</details>
+
+<details>
+<summary><b>🎙️ AI, voice & workflow orchestration</b></summary>
+
+<br />
+
+- Integrate speech-to-text, language models, and text-to-speech.
+- Build retrieval-augmented generation workflows.
+- Develop real-time voice systems and AI-enabled automation.
+- Coordinate Redis-backed queues, workers, and background jobs.
+- Apply retries, idempotency, and explicit failure handling.
+
+</details>
+
+<details>
+<summary><b>⚙️ Infrastructure, delivery & operations</b></summary>
+
+<br />
+
+- Package services with Docker.
+- Work with Kubernetes and Terraform.
+- Build repeatable CI/CD and deployment workflows.
+- Integrate logging, metrics, and monitoring.
+- Document deployment, recovery, and ongoing operations.
+
+</details>
+
+## Stack
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Applications** | Python · TypeScript · React · FastAPI |
+| **Data** | PostgreSQL · Redis |
+| **Workflows** | Queues · Workers · Orchestration |
+| **Platform** | Docker · Kubernetes · Terraform · CI/CD |
+| **AI** | STT · LLMs · TTS · RAG |
+| **Interfaces** | REST APIs · SDKs · CLI tools · MCP |
+
+## Public Work
+
+### 🎬 [APEX AI Shortz](https://github.com/mrankitpanicker/apex-ai-shortz)
+
+Automated short-form video generation using local AI models.
+
+`Python` `FastAPI` `Redis` `GPU Workers` `Docker`
+
+<details>
+<summary><b>Explore the repository scope</b></summary>
+
+<br />
+
+The repository includes:
+
+- FastAPI API and Redis-backed job queue
+- GPU worker and desktop interface
+- XTTS, Whisper, and FFmpeg media pipeline
+- Docker configuration and monitoring components
+- Tests and operational documentation
+
+[**Browse source →**](https://github.com/mrankitpanicker/apex-ai-shortz)
+
+</details>
+
+### 🧩 [claude4saas](https://github.com/mrankitpanicker/claude4saas)
 
 A public Claude Code plugin marketplace and agent harness.
 
-The repository contains the plugin manifest and package, along with installation, troubleshooting, changelog, and licensing documentation. Its README documents pipeline agents, execution guards, memory handling, effort routing, agent loops, evaluations, statistics, and project bootstrap behaviour.
+`Developer Tooling` `Agents` `Evaluations` `Execution Guards`
 
-### [AIM Systems Web](https://github.com/mrankitpanicker/aimsystems)
+<details>
+<summary><b>Explore the repository scope</b></summary>
 
-The public web and job-application surface for AIM Systems.
+<br />
 
-The repository contains the public site and application pages, Firebase configuration and rules, a Cloudflare Worker for CV uploads, and web-discovery files. It represents the public web surface only, not the underlying AI platform.
+The repository contains the plugin manifest and package, installation
+instructions, troubleshooting guidance, changelog, and licensing documentation.
 
-## Professional links
+Its README documents:
 
-- AIM Systems: https://aimsystem.in/
-- APEX Connect: https://aimstudio.co.in/
-- Portfolio: https://theankitpanicker.web.app/
-- LinkedIn: https://www.linkedin.com/in/ankit-panicker/
-- Email: [ankit@aimsystem.in](mailto:ankit@aimsystem.in)
+- Architecture-to-release pipeline agents
+- Execution guards and memory handling
+- Effort routing and agent loops
+- Evaluations and statistics
+- Project bootstrap behaviour
 
-Available for remote B2B product engineering and technical leadership engagements with UK and European teams.
+[**Browse source →**](https://github.com/mrankitpanicker/claude4saas)
+
+</details>
+
+### 🌐 [AIM Systems Web](https://github.com/mrankitpanicker/aimsystems)
+
+The public website and job-application surface for AIM Systems.
+
+`Web` `Firebase` `Cloudflare Workers`
+
+<details>
+<summary><b>Explore the repository scope</b></summary>
+
+<br />
+
+The repository contains:
+
+- Public website and application pages
+- Firebase configuration and rules
+- Cloudflare Worker for CV uploads
+- Web-discovery files
+
+**Scope:** This repository represents the public web surface.
+The underlying AI platform is outside this repository.
+
+[**Browse source →**](https://github.com/mrankitpanicker/aimsystems)
+
+</details>
+
+## Engineering Principles
+
+~~~text
+01  Connect technical decisions to business outcomes.
+02  Design for failure, not only the happy path.
+03  Treat multi-tenancy as a security boundary.
+04  Use queues, retries, and idempotency deliberately.
+05  Build observability and maintainability into the product.
+06  Leave the customer with a system they can operate.
+~~~
+
+## Contact
+
+Available for **remote B2B product engineering and technical leadership
+engagements with UK and European teams**.
+
+- **Company:** [aimsystem.in](https://aimsystem.in/)
+- **APEX Connect:** [aimstudio.co.in](https://aimstudio.co.in/)
+- **Portfolio:** [theankitpanicker.web.app](https://theankitpanicker.web.app/)
+- **LinkedIn:** [ankit-panicker](https://www.linkedin.com/in/ankit-panicker/)
+- **Email:** [ankit@aimsystem.in](mailto:ankit@aimsystem.in)
+
+---
+
+<div align="center">
+
+**From business requirements to systems teams can operate.**
+
+[↑ Back to top](#hi-im-ankit-panicker-)
+
+</div>
+```
