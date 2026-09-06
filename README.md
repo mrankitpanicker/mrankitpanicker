@@ -1,577 +1,577 @@
-<a id="top"></a>
-
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:0C4A6E,100:075985&height=230&section=header&text=ANKIT%20PANICKER&fontSize=46&fontColor=FFFFFF&animation=fadeIn&fontAlignY=37&desc=CTO%20%26%20AI%20SYSTEMS%20ARCHITECT%20%7C%20AIM%20SYSTEMS&descSize=15&descAlignY=57" alt="Ankit Panicker — CTO and AI Systems Architect at AIM Systems" />
+<svg width="880" height="180" viewBox="0 0 880 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Ankit Panicker — Engineering Depth Map</title>
+  <desc id="description">An animated signal moves through architecture, AI orchestration, reliability, and production operations.</desc>
+  <defs>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="0.52" stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="880" height="180" rx="18" fill="#07111F"/>
+  <path d="M54 125 H826" stroke="#23344D" stroke-width="2"/>
+  <path d="M54 125 H826" stroke="url(#signal)" stroke-width="3" stroke-dasharray="130 642">
+    <animate attributeName="stroke-dashoffset" from="772" to="-772" dur="4.8s" repeatCount="indefinite"/>
+  </path>
+  <circle cx="54" cy="125" r="5" fill="#2563EB"/>
+  <circle cx="311" cy="125" r="5" fill="#06B6D4"/>
+  <circle cx="568" cy="125" r="5" fill="#14B8A6"/>
+  <circle cx="826" cy="125" r="5" fill="#22C55E"/>
+  <circle r="5" fill="#E6FBFF" filter="url(#glow)">
+    <animateMotion dur="4.8s" repeatCount="indefinite" path="M54 125 H826"/>
+  </circle>
+  <text x="54" y="48" fill="#F8FAFC" font-size="28" font-family="Inter, Segoe UI, sans-serif" font-weight="700">ANKIT PANICKER</text>
+  <text x="54" y="78" fill="#9FB3CC" font-size="16" font-family="Inter, Segoe UI, sans-serif">AI Systems Architecture · Platform Engineering · Reliability</text>
+  <text x="54" y="151" fill="#7EA3D8" font-size="12" font-family="Inter, Segoe UI, sans-serif">ARCHITECTURE</text>
+  <text x="272" y="151" fill="#64CFE3" font-size="12" font-family="Inter, Segoe UI, sans-serif">ORCHESTRATION</text>
+  <text x="537" y="151" fill="#58D6C6" font-size="12" font-family="Inter, Segoe UI, sans-serif">RELIABILITY</text>
+  <text x="773" y="151" fill="#71DF91" font-size="12" font-family="Inter, Segoe UI, sans-serif">OPS</text>
+</svg>
 
-### From business requirements to systems teams can operate.
+# Engineering Depth & Technology Portfolio
 
-**B2B SaaS · Real-Time AI & Voice · Distributed Systems · Platform Reliability**
+**Architecture → implementation → tests → containers → deployment → operations**
 
-<a href="https://aimsystem.in/">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=3200&pause=1500&color=38BDF8&center=true&vCenter=true&width=720&height=60&lines=Architecture+%E2%86%92+Engineering+%E2%86%92+Deployment+%E2%86%92+Operations;Real-time+AI.+Explicit+boundaries.+Recoverable+systems.;Build+the+product.+Own+the+failure+paths." alt="Architecture, engineering, deployment, and operations. Build the product. Own the failure paths." />
-</a>
-
-[![AIM Systems](https://img.shields.io/badge/AIM_SYSTEMS-075985?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aimsystem.in/)
-[![APEX Connect](https://img.shields.io/badge/APEX_CONNECT-0369A1?style=for-the-badge)](https://aimstudio.co.in/)
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-0F172A?style=for-the-badge&logo=react&logoColor=38BDF8)](https://theankitpanicker.web.app/)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/ankit-panicker/)
-[![Email](https://img.shields.io/badge/CONTACT-0F172A?style=for-the-badge&logo=gmail&logoColor=38BDF8)](mailto:ankit@aimsystem.in)
-
-<br />
-
-[Profile](#profile) · [Engineering Focus](#engineering) · [Stack](#stack) · [Selected Work](#work) · [Operating Principles](#principles) · [Contact](#contact)
+[![Primary](https://img.shields.io/badge/Primary-Python_%C2%B7_FastAPI_%C2%B7_Redis-2563EB?style=flat-square)](#depth-map)
+[![Systems](https://img.shields.io/badge/Systems-Queues_%C2%B7_WAL_%C2%B7_Idempotency-0891B2?style=flat-square)](#architecture--systems-knowledge)
+[![Platform](https://img.shields.io/badge/Platform-Docker_%C2%B7_Azure_%C2%B7_Kubernetes-0F766E?style=flat-square)](#platform-cloud--devops)
+[![AI](https://img.shields.io/badge/AI-STT_%E2%86%92_LLM_%E2%86%92_TTS-7C3AED?style=flat-square)](#ai-llm--voice-systems)
 
 </div>
 
+> I build complete AI-enabled platforms around the model: APIs, distributed
+> execution, tenant boundaries, recovery, evaluation, observability, deployment,
+> and operational controls. My strongest work is in real-time AI infrastructure
+> and reliability engineering—not foundation-model training.
+
 ---
 
-<a id="profile"></a>
+## Navigate
 
-## Product thinking. Systems depth. Delivery ownership.
+- [Depth map](#depth-map)
+- [Architecture and systems knowledge](#architecture--systems-knowledge)
+- [Technology landscape](#technology-landscape)
+- [Project stack dossiers](#project-stack-dossiers)
+- [Engineering practices](#engineering-practices)
+- [Knowledge boundaries](#knowledge-boundaries)
+- [Compact professional stack](#compact-professional-stack)
 
-I'm **Ankit Panicker**, CTO & AI Systems Architect at **AIM Systems**
-and creator of **[APEX Connect](https://aimstudio.co.in/)**.
+---
 
-I build B2B products across the full delivery lifecycle: requirements,
-architecture, user experience, frontend applications, backend services,
-AI integration, infrastructure, deployment, and ongoing operations.
+## Depth map
 
-My deepest engineering work sits in **Python backends, Redis coordination,
-queue-and-worker systems, real-time voice orchestration, multi-tenant
-architecture, and failure recovery**.
+Depth is based on repeated implementation evidence across the repositories in
+`E:\Projects`, not on dependency presence alone.
 
-I connect product decisions to the engineering and operational work
-required to sustain them: latency, cost, security boundaries, deployment
-risk, recovery, and maintainability.
+| Depth | Meaning | Technologies and capabilities |
+|---|---|---|
+| **Deep** | Repeated implementation; defensible in a code walkthrough | Python, FastAPI, Redis primitives, asynchronous APIs, queue/worker systems, reliability engineering, multi-tenant backends, real-time AI orchestration |
+| **Strong** | Used in working systems with meaningful ownership | TypeScript, React, Node.js/Express, PostgreSQL, MySQL, Docker/Compose, WebSockets, observability, testing, CI/CD |
+| **Working** | Shipped or configured; not positioned as specialist depth | Go, Kubernetes/AKS, Terraform, Azure infrastructure, Cloudflare edge, Nginx, GPU inference operations, advanced browser/media APIs |
+| **Exposure** | Integrated, evaluated, or present in a project; depth varies | Model families, PEFT/GGUF tooling, specialized vision/audio libraries, deep cluster internals, provider-specific advanced operations |
 
-> A feature is one part of the product. Its failure handling, observability,
-> recovery, and handover are part of the product too.
+### Strongest engineering signature
 
-<a id="engineering"></a>
+```mermaid
+flowchart LR
+    A[API / Event] --> B[Admission control]
+    B --> C[Durable queue]
+    C --> D[Worker / Supervisor]
+    D --> E[External AI or domain service]
+    E --> F[Persisted result]
+    F --> G[Telemetry and audit]
 
-## Where I go deep
-
-| Engineering area | What I focus on |
-| :--- | :--- |
-| **Multi-tenant platforms** | Tenant boundaries, RBAC, API contracts, data models, and background execution |
-| **Distributed execution** | Queues, at-least-once processing, idempotency, durable outboxes, and reconciliation |
-| **Reliability & recovery** | WAL, replay, circuit breakers, bounded concurrency, backpressure, and graceful degradation |
-| **Real-time AI & voice** | STT → LLM → TTS orchestration, streaming audio, telephony integration, and provider fallbacks |
-| **Product delivery** | Frontend applications, backend services, integrations, SDKs, CLI tools, and operational interfaces |
-| **Operational ownership** | Telemetry, failure diagnosis, deployment health checks, rollback procedures, and restore workflows |
-
-<details>
-<summary><b>Explore my architecture-to-operations scope</b></summary>
-
-<br />
-
-```text
-BUSINESS REQUIREMENTS
-         |
-         v
-PRODUCT & SYSTEM ARCHITECTURE
-         |
-         +-- Experience     Frontend / workflows / offline behaviour
-         |
-         +-- Interfaces     APIs / SDKs / CLI / MCP
-         |
-         +-- Services       Tenant boundaries / data / orchestration
-         |
-         +-- AI runtime     Models / streaming / evaluation / fallbacks
-         |
-         +-- Execution      Queues / workers / concurrency / recovery
-         |
-         +-- Platform       Containers / delivery / secrets / telemetry
-         |
-         v
-DEPLOY --> OBSERVE --> OPERATE --> IMPROVE
+    B -. overload .-> H[Backpressure]
+    D -. failure .-> I[Retry + idempotency]
+    I -. exhausted .-> J[DLQ / reconciliation]
+    E -. unavailable .-> K[Fallback / graceful degradation]
 ```
 
-</details>
+- Failure paths are designed explicitly rather than treated as exceptional.
+- Redis is used as a distributed primitive, not merely as a cache.
+- At-least-once delivery is paired with idempotency and recovery controls.
+- AI providers are placed behind routing, concurrency, timeout, and fallback
+  boundaries.
+- Runtime claims are kept separate from design intent and checked-in code.
 
-<a id="stack"></a>
+---
 
-## Engineering toolkit
+## Architecture & systems knowledge
 
-**Core application and data technologies**
+### Distributed execution
 
-<table>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=python" width="46" alt="Python" /><br /><sub><b>Python</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=fastapi" width="46" alt="FastAPI" /><br /><sub><b>FastAPI</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=redis" width="46" alt="Redis" /><br /><sub><b>Redis</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=ts" width="46" alt="TypeScript" /><br /><sub><b>TypeScript</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=react" width="46" alt="React" /><br /><sub><b>React</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=nodejs" width="46" alt="Node.js" /><br /><sub><b>Node.js</b></sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=postgres" width="46" alt="PostgreSQL" /><br /><sub><b>PostgreSQL</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=mysql" width="46" alt="MySQL" /><br /><sub><b>MySQL</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=nextjs" width="46" alt="Next.js" /><br /><sub><b>Next.js</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=tailwind" width="46" alt="Tailwind CSS" /><br /><sub><b>Tailwind CSS</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=vite" width="46" alt="Vite" /><br /><sub><b>Vite</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=express" width="46" alt="Express" /><br /><sub><b>Express</b></sub>
-</td>
-</tr>
-</table>
+- Queue and worker separation
+- Supervisor-controlled job state
+- At-least-once processing semantics
+- Idempotency keys and deduplication
+- Dead-letter queues and reconciliation
+- Exponential-backoff retries
+- Write-ahead logs and replay
+- Durable and transactional outboxes
+- Optimistic concurrency
+- Bounded concurrency and admission control
+- Adaptive backpressure
+- Graceful shutdown with in-flight draining
+- Circuit breakers, including cross-process synchronization
+- Partial-result and provider degradation strategies
 
-**Platform, delivery, and observability**
+### SaaS and platform architecture
 
-<table>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=docker" width="46" alt="Docker" /><br /><sub><b>Docker</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=githubactions" width="46" alt="GitHub Actions" /><br /><sub><b>GitHub Actions</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=prometheus" width="46" alt="Prometheus" /><br /><sub><b>Prometheus</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=grafana" width="46" alt="Grafana" /><br /><sub><b>Grafana</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=nginx" width="46" alt="Nginx" /><br /><sub><b>Nginx</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=azure" width="46" alt="Azure" /><br /><sub><b>Azure</b></sub>
-</td>
-</tr>
-</table>
+- Multi-tenant data and execution boundaries
+- Per-tenant capacity controls
+- RBAC and role-to-module authorization
+- White-label configuration
+- API-first service boundaries
+- SDK and CLI product surfaces
+- Offline-first synchronization
+- Hybrid cloud/edge control and media planes
+- Background processing and scheduled execution
+- Versioned migrations and backward-compatible rollout thinking
 
-**Additional working toolkit**
+### Reliability and recovery
 
-<table>
-<tr>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=go" width="46" alt="Go" /><br /><sub><b>Go</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=kubernetes" width="46" alt="Kubernetes" /><br /><sub><b>Kubernetes / AKS</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=terraform" width="46" alt="Terraform" /><br /><sub><b>Terraform</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=cloudflare" width="46" alt="Cloudflare" /><br /><sub><b>Cloudflare</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=pytorch" width="46" alt="PyTorch" /><br /><sub><b>PyTorch</b></sub>
-</td>
-<td align="center" width="100">
-<img src="https://skillicons.dev/icons?i=threejs" width="46" alt="Three.js" /><br /><sub><b>Three.js</b></sub>
-</td>
-</tr>
-</table>
+- Health, readiness, and dependency probes
+- Persistent queue and WAL state
+- Backup and restore workflows
+- Restore drills and recovery validation
+- Deployment rollback procedures
+- Failure-domain and blast-radius analysis
+- Synthetic checks and operational runbooks
+- Fault injection, chaos, stress, and soak testing
 
-My strongest depth is in Python, FastAPI, Redis, distributed workers,
-voice-AI orchestration, and reliability engineering. Go, Kubernetes/AKS,
-Terraform, advanced frontend graphics, and edge infrastructure form part
-of my working toolkit. My AI focus is **integration, inference,
-orchestration, and evaluation**.
+### AI systems architecture
 
-<details>
-<summary><b>01 / Backend, APIs & developer interfaces</b></summary>
+- Deterministic orchestration around non-deterministic models
+- STT → LLM → TTS streaming pipelines
+- Provider routing and fallback
+- Prompt and configuration versioning
+- Structured-output validation
+- RAG and vector memory
+- Per-tenant model concurrency
+- Latency and token/cost controls
+- Model lifecycle management
+- Warm GPU workers and VRAM-aware execution
+- AI evaluation datasets and regression gates
 
-<br />
+---
 
-**Languages:** Python, TypeScript, JavaScript, Go, SQL, Bash, PowerShell.
+## Technology landscape
 
-**Backend:** FastAPI, Uvicorn, Pydantic, SQLAlchemy 2, Alembic,
-aiohttp, Node.js, Express, Hono, Zod.
+### Languages
 
-**Interfaces:** REST, OpenAPI, WebSockets, Server-Sent Events,
-Socket.IO, multipart uploads, Go SDKs, CLI tools, MCP servers and tools.
+`Python` · `TypeScript` · `JavaScript` · `Go` · `SQL` · `Bash` ·
+`PowerShell` · `HTML` · `CSS` · `HCL` · `YAML` · `JSON`
 
-**Execution:** Redis queues, workers, pub/sub, caching, rate limiting,
-coordination, and deterministic orchestration.
+### Backend, APIs & developer interfaces
 
-</details>
+`FastAPI` · `Uvicorn` · `Pydantic` · `SQLAlchemy 2` · `Alembic` ·
+`aiohttp` · `WebSockets` · `SSE` · `Express.js` · `Node.js` · `Hono` ·
+`Socket.IO` · `Zod` · `REST` · `OpenAPI` · `Go SDKs` · `Cobra CLI` ·
+`OAuth2 + PKCE` · `Model Context Protocol`
 
-<details>
-<summary><b>02 / Frontend, browser & offline applications</b></summary>
+### Frontend & browser
 
-<br />
+`React` · `Next.js` · `Vite` · `Tailwind CSS` · `Zustand` ·
+`TanStack Query` · `React Router` · `Recharts` · `React Flow` ·
+`Motion / Framer Motion` · `Three.js` · `React Three Fiber` · `Drei` ·
+`HLS.js` · `PWA` · `Workbox` · `IndexedDB` · `Dexie` · `Web Workers` ·
+`DuckDB WASM` · `FFmpeg WASM`
 
-**Application frameworks:** React, Next.js App Router, Vite,
-TypeScript, HTML, CSS, Tailwind CSS.
+### Data & state
 
-**State and data:** Zustand, TanStack Query, TanStack Table,
-React Router, IndexedDB, Dexie.
+`PostgreSQL` · `MySQL 8` · `Redis` · `Firestore` · `IndexedDB` ·
+`DuckDB WASM` · `SQLAlchemy` · `psycopg` · `mysql2` · `Alembic` ·
+`RedisVL`
 
-**Interfaces and visualization:** shadcn/ui, Base UI, Lucide,
-Recharts, React Flow / XYFlow, Motion.
+### Platform, cloud & DevOps
 
-**Graphics and media:** Three.js, React Three Fiber, Drei,
-OGL/WebGL, HLS.js.
+`Docker` · `Docker Compose` · `Kubernetes` · `AKS` · `Terraform` ·
+`Azure` · `ACR` · `Key Vault` · `Azure Arc` · `GitHub Actions` ·
+`OIDC CI/CD` · `Cloudflare Tunnel` · `Cloudflare Workers` ·
+`Cloudflare Pages` · `Wrangler` · `Firebase Hosting` ·
+`Azure Static Web Apps` · `Nginx` · `OpenVPN`
 
-**Browser architecture:** PWAs, service workers, Workbox,
-route-based code splitting, offline synchronization,
-privacy-first browser applications, DuckDB WASM.
+### Kubernetes operations
 
-</details>
+`Deployments` · `StatefulSets` · `HPA` · `KEDA` · `PDB` · `Ingress` ·
+`ConfigMaps` · `Secrets` · `External Secrets Operator` · `cert-manager`
 
-<details>
-<summary><b>03 / AI integration, orchestration & evaluation</b></summary>
+### Observability
 
-<br />
+`OpenTelemetry` · `OTLP/gRPC` · `Prometheus` · `Grafana` · `Loki` ·
+`Sentry` · `Pino` · structured JSON logs · traces · metrics · alerts ·
+synthetic probes
 
-**Providers and runtimes:** OpenAI APIs, Azure OpenAI,
-Groq, Llama, Gemini, Hugging Face Transformers,
-local LLM endpoints, llama.cpp-style runtimes.
+### Testing & quality
 
-**Orchestration:** Provider routing, structured-output validation,
-prompt/configuration versioning, RAG, vector memory, RedisVL,
-fallbacks, persistent model workers.
+`pytest` · `Vitest` · `Jest` · `Supertest` · `Playwright` · `k6` ·
+`fast-check` · unit · integration · E2E · smoke · load · stress · chaos ·
+soak · fault injection · tenant isolation · AI evaluations
 
-**Runtime concerns:** Latency, concurrency, cost control,
-warm-model lifecycle, VRAM management, partial-result degradation.
+### Security & governance
 
-**Evaluation:** Golden datasets, AI behaviour evaluations,
-failure handling, and deterministic orchestration.
+`RBAC` · `JWT` · `OAuth2/PKCE` · `bcrypt` · OS keychains · API keys ·
+rate limiting · tenant isolation · CORS · Helmet · secrets management ·
+tamper-evident audit chains · SSRF/DNS-rebinding tests · air-gapped deployment
 
-</details>
+### AI, ML & inference
 
-<details>
-<summary><b>04 / Real-time voice & telephony</b></summary>
+`OpenAI` · `Azure OpenAI` · `Groq` · `Google Gemini` ·
+`Hugging Face Transformers` · `Diffusers` · `PyTorch` · `CUDA` ·
+`ONNX Runtime GPU` · `Whisper` · `Faster-Whisper` · `Deepgram` ·
+`Azure Speech` · `Edge TTS` · `Kokoro` · `XTTS v2` · `RAG` ·
+`PEFT` · `GGUF` · `Accelerate`
 
-<br />
+### Telephony & real-time voice
 
-**Telephony:** Asterisk, PJSIP, SIP, RTP, AudioSocket,
-BSNL SIP trunk integration, Twilio, Telnyx.
+`Asterisk` · `PJSIP` · `SIP` · `RTP` · `AudioSocket` · `WebSockets` ·
+`BSNL SIP` · `Twilio` · `Telnyx` · `OpenVPN` · DIDs · CDRs ·
+audio framing · paced media writes · silence keepalive
 
-**Speech:** Deepgram, Whisper, Faster-Whisper, Azure Speech,
-Azure Neural TTS, Edge TTS, Kokoro, XTTS v2.
+### Media & GPU pipelines
 
-**Streaming:** WebSocket audio, audio framing and pacing,
-silence keepalive, quality gates.
+`FFmpeg` · `MoviePy` · `PyAV` · `OpenCV` · `Librosa` · `SpeechBrain` ·
+`Pyannote Audio` · `MediaPipe` · `InsightFace` · `Segment Anything` ·
+`Gradio` · `PyQt6` · subtitle alignment · ASS rendering · GPU workers
 
-**Operations:** Outbound campaigns, DID routing, call-state handling,
-CDRs, trunk-health gating, OpenVPN media connectivity,
-cloud control-plane and local media-plane separation.
+### Browser automation, documents & data tooling
 
-</details>
+`Playwright` · `Puppeteer` · `Cheerio` · `Beautiful Soup` · `Scrapling` ·
+`Trafilatura` · `PDF.js` · `pdf-lib` · `Mammoth` · `ExcelJS` · `SheetJS` ·
+`OpenPyXL` · `WeasyPrint` · `Matplotlib` · `AJV / JSON Schema` · `JSONPath`
 
-<details>
-<summary><b>05 / Data, distributed state & recovery</b></summary>
+### SEO & search systems
 
-<br />
+Technical SEO · on-page SEO · E-E-A-T · Schema.org / JSON-LD ·
+Core Web Vitals · GSC · GA4 · PageSpeed · CrUX · GEO / AI-search readiness ·
+local SEO · hreflang · e-commerce SEO · programmatic SEO · sitemaps ·
+backlinks · SERP clustering · SXO · IndexNow · content briefs · SEO drift
 
-**Storage:** PostgreSQL, MySQL, Redis, Firestore,
-IndexedDB, Dexie, DuckDB WASM.
+---
 
-**Data engineering:** Migrations, indexes, multi-tenant schemas,
-optimistic concurrency, soft deletes, append-only audit records.
+## Project stack dossiers
 
-**Recovery patterns:** At-least-once delivery, idempotency keys,
-durable outboxes, WAL, replay, reconciliation, dead-letter queues,
-exponential backoff.
+<details open>
+<summary><strong>APEX Connect / AIVoice — flagship voice AI platform</strong></summary>
 
-**Coordination:** Distributed circuit breakers, bounded concurrency,
-adaptive backpressure, graceful shutdown, in-flight draining,
-single-authority supervision, split-brain prevention.
+**Depth:** Production-leaning multi-tenant system with the strongest reliability
+and real-time AI evidence in the portfolio.
+
+**Core stack**
+
+- Python, FastAPI, Pydantic, SQLAlchemy, Alembic
+- Redis, PostgreSQL, WebSockets
+- React, Vite, TypeScript, Tailwind, Zustand, Recharts
+- Docker Compose, Kubernetes/AKS, Terraform, Azure, Nginx
+- Asterisk, PJSIP, AudioSocket, OpenVPN
+- Twilio, Telnyx, BSNL, WAHA/WhatsApp
+- Deepgram, Azure Speech, OpenAI/Azure OpenAI, Groq, Edge TTS
+- OpenTelemetry, Prometheus, Grafana, Loki, Sentry
+- Go CLI, Go SDK, MCP server
+
+**Depth demonstrated**
+
+- Tenant-aware voice and messaging orchestration
+- Real-time STT → LLM → TTS media flow
+- Idempotent workers and at-least-once delivery
+- Redis-synchronized circuit breaking
+- Per-tenant concurrency and capacity controls
+- Durable queue/WAL state and recovery
+- Hybrid AKS control plane plus local Asterisk media plane
+- Unit, integration, E2E, chaos, stress, and load-test surfaces
+
+**Truth boundary:** Checked-in architecture and targeted runtime evidence are
+strong. Live deployment state, provider credentials, current traffic, and full
+release-gate status require fresh verification.
+
+**Evidence:** [`aivoice/README.md`](aivoice/README.md) ·
+[`aivoice/docs/ARCHITECTURE.md`](aivoice/docs/ARCHITECTURE.md)
 
 </details>
 
-<details>
-<summary><b>06 / Infrastructure, cloud & delivery</b></summary>
+<details open>
+<summary><strong>APEX HMS — offline-first hospital platform</strong></summary>
 
-<br />
+**Depth:** Highest systems-design ambition; implemented multi-tenant platform,
+with production-readiness claims kept separate from test and deployment evidence.
 
-**Containers:** Docker, Compose, multi-stage builds, GPU containers.
+**Core stack**
 
-**Kubernetes / AKS:** Deployments, StatefulSets, HPA, KEDA,
-Pod Disruption Budgets, Ingress, ConfigMaps, Secrets.
+- TypeScript monorepo: shared, server, client
+- Node.js, Express-based service dependencies, supervised jobs
+- React, Vite, Zustand, Dexie, IndexedDB, Workbox/PWA
+- MySQL 8, migrations, multi-tenant data model
+- Docker Compose, Nginx, Terraform/Azure deployment assets
+- APEX Voice AI and WhatsApp integration surfaces
 
-**Azure:** Container Registry, Key Vault, Virtual Networks,
-NSGs, Arc, Static Web Apps.
+**Depth demonstrated**
 
-**Infrastructure and edge:** Terraform, External Secrets Operator,
-cert-manager, Nginx, Cloudflare Tunnel, Workers, Pages,
-Wrangler, Firebase Hosting.
+- Deterministic Supervisor → Queue → Worker → WAL execution
+- Offline mutation queue and reconnect synchronization
+- WAL replay, idempotency, and recovery
+- Database-backed RBAC and role/module matrices
+- Soft deletes, optimistic concurrency, and audit trails
+- Single-authority job-state transitions
+- White-label hospital provisioning
+- Durable notification/integration boundaries
 
-**Delivery:** GitHub Actions, OIDC-based CI/CD,
-build and artifact caching, deployment health checks,
-rollbacks, backup/restore workflows, hybrid cloud/edge deployments.
+**Truth boundary:** Broad implementation exists, but code intent, benchmark/test
+results, synthetic-demo behavior, and production readiness must remain distinct.
 
-</details>
-
-<details>
-<summary><b>07 / Security, observability & engineering quality</b></summary>
-
-<br />
-
-**Security controls:** Tenant isolation, RBAC, permission matrices,
-JWT, OAuth2 with PKCE, API keys, bcrypt, rate limiting,
-OS keychain storage, secret injection, Key Vault, audit chains.
-
-**Observability:** OpenTelemetry, Prometheus, Grafana, Loki,
-Sentry, OTLP/gRPC, structured JSON logs, Pino,
-stage-level traces, queue-depth metrics, latency tracking.
-
-**Testing tools:** pytest, Vitest, Jest, Supertest,
-Playwright, k6, fast-check.
-
-**Validation:** Integration and end-to-end tests, tenant-isolation
-checks, load/stress/soak tests, chaos testing, failure injection,
-WebSocket and Redis fault testing, rolling-deployment checks.
-
-**Operations:** Synthetic probes, alerting, runbooks,
-incident diagnosis, rollback procedures, restore drills.
-
-My strongest testing emphasis is failure-oriented infrastructure
-validation; unit-test depth varies by project.
+**Evidence:** [`HMS/APEX-HMS/README.md`](HMS/APEX-HMS/README.md)
 
 </details>
 
 <details>
-<summary><b>08 / Media, GPU inference & automation</b></summary>
+<summary><strong>Shortz — distributed AI video pipeline</strong></summary>
 
-<br />
+**Depth:** Systems-oriented media pipeline; strong worker, telemetry, and
+failure-testing design with uneven ordinary unit-test depth.
 
-**Media:** FFmpeg, FFmpeg WASM, MoviePy, PyAV, OpenCV,
-Librosa, subtitle generation, forced alignment, ASS subtitles.
+**Stack:** Python, FastAPI, Redis, PyQt6, FFmpeg, Whisper, XTTS v2, PyTorch,
+CUDA, Prometheus, Grafana, Docker Compose.
 
-**Inference toolkit:** PyTorch, CUDA, Transformers, Diffusers,
-Accelerate, ONNX Runtime, GPU workers, VRAM-aware model lifecycle.
+**Knowledge demonstrated:** staged script → TTS → alignment → subtitle → render
+pipeline; Redis worker queues; DLQ handling; per-stage traces; queue-wait and
+failure metrics; GPU resource management; soak tests and fault injection.
 
-**Additional runtime exposure:** SpeechBrain, Pyannote Audio,
-Segment Anything, MediaPipe, InsightFace, PEFT, GGUF,
-low-VRAM inference techniques.
-
-**Interfaces:** Gradio, PyQt6.
-
-**Browser automation:** Playwright, Puppeteer, Cheerio,
-Beautiful Soup, Scrapling, Trafilatura, persistent browser sessions,
-retryable multi-source extraction.
-
-**Documents and reporting:** PDF parsing/generation, Mammoth,
-ExcelJS, SheetJS, OpenPyXL, WeasyPrint, Matplotlib,
-JSON Schema, AJV, JSONPath.
+**Evidence:** [`Shortz/README.md`](Shortz/README.md) ·
+[`Shortz/docs/ARCHITECTURE.md`](Shortz/docs/ARCHITECTURE.md)
 
 </details>
 
 <details>
-<summary><b>09 / Search, discovery & growth tooling</b></summary>
+<summary><strong>ApexJob.io — real-time job search orchestration</strong></summary>
 
-<br />
+**Depth:** Working full-stack application with multi-source orchestration and
+model-independent fallback behavior.
 
-**Technical discovery:** Technical SEO, Schema.org / JSON-LD,
-sitemaps, hreflang, Core Web Vitals, Lighthouse,
-PageSpeed Insights, CrUX.
+**Stack:** TypeScript, React, Vite, Zustand, Express, Socket.IO, Axios, Cheerio,
+Playwright, OpenAI, Fuse.js, PDF/DOCX parsing, Zod, Tailwind.
 
-**Measurement:** Search Console, GA4, Bing visibility, IndexNow,
-SEO drift monitoring.
+**Knowledge demonstrated:** live streaming results, provider/source retries,
+exponential backoff, partial-result degradation, resume parsing, keyword fallback,
+RAG-style ranking, virtualization, and document ingestion.
 
-**Research and content:** Keyword clustering, competitor analysis,
-content briefs, E-E-A-T assessment, local and e-commerce SEO,
-programmatic SEO, backlink analysis.
-
-**AI search:** GEO, AI citation readiness, and evidence-backed
-search-experience recommendations.
+**Evidence:** [`apexjob.io/package.json`](apexjob.io/package.json) ·
+[`apexjob.io/README.md`](apexjob.io/README.md)
 
 </details>
-
-<a id="work"></a>
-
-## Selected work
-
-**`SELECT A CARD TO EXPLORE`**
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://aimstudio.co.in/">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,100:075985&height=165&text=APEX%20CONNECT&fontSize=28&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20AI%20%26%20VOICE&descSize=11&descAlignY=66" alt="APEX Connect — visit the product website" />
-</a>
-
-**Multi-tenant AI voice & WhatsApp platform**
-
-Real-time voice orchestration, appointment workflows,
-campaign execution, and control-plane/media-plane separation.
-
-`Voice AI` `Multi-tenancy` `Orchestration`
-
-[Visit product website →](https://aimstudio.co.in/)
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/mrankitpanicker/apex-ai-shortz">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:020617,100:1E3A8A&height=165&text=APEX%20AI%20SHORTZ&fontSize=28&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20MEDIA%20PIPELINES&descSize=11&descAlignY=66" alt="APEX AI Shortz — explore the public repository" />
-</a>
-
-**Local AI video generation**
-
-FastAPI API, Redis-backed jobs, GPU workers,
-and an XTTS, Whisper, and FFmpeg media pipeline.
-
-`Python` `Redis` `GPU Workers`
-
-[Explore repository →](https://github.com/mrankitpanicker/apex-ai-shortz)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/mrankitpanicker/claude4saas">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0B1721,100:155E75&height=165&text=CLAUDE4SAAS&fontSize=28&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20DEVELOPER%20TOOLS&descSize=11&descAlignY=66" alt="claude4saas — explore the public repository" />
-</a>
-
-**Claude Code plugin marketplace & agent harness**
-
-Plugin package and documentation covering pipeline agents,
-execution guards, evaluations, and project bootstrap.
-
-`Agents` `Developer Tools` `Evaluations`
-
-[Explore repository →](https://github.com/mrankitpanicker/claude4saas)
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/mrankitpanicker/aimsystems">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0F172A,100:0369A1&height=165&text=AIM%20SYSTEMS%20WEB&fontSize=27&fontColor=FFFFFF&fontAlignY=39&desc=ANKIT%20PANICKER%20%2F%2F%20PUBLIC%20WEB&descSize=11&descAlignY=66" alt="AIM Systems Web — explore the public repository" />
-</a>
-
-**Public website & application surface**
-
-Public pages, Firebase configuration and rules,
-and a Cloudflare Worker for CV uploads.
-
-`Web` `Firebase` `Cloudflare`
-
-[Explore repository →](https://github.com/mrankitpanicker/aimsystems)
-
-</td>
-</tr>
-</table>
 
 <details>
-<summary><b>Repository scope and supporting material</b></summary>
+<summary><strong>Wan2GP — generative media runtime and GPU tooling</strong></summary>
 
-<br />
+**Depth:** Working exposure to a large upstream generative-media runtime;
+valuable for inference integration and GPU diagnosis, not evidence of training
+the underlying models.
 
-- **APEX AI Shortz** also includes a desktop interface, Docker
-  configuration, monitoring components, tests, and documentation.
-- **claude4saas** documents memory handling, effort routing,
-  agent loops, statistics, installation, and troubleshooting.
-- **AIM Systems Web** represents the public web surface;
-  the underlying AI platform is outside that repository.
-- Broader project context is available through my
-  [portfolio](https://theankitpanicker.web.app/).
+**Stack:** Python, PyTorch, CUDA, Diffusers, Transformers, Accelerate, ONNX
+Runtime GPU, Gradio, FFmpeg, OpenCV, Whisper, SpeechBrain, Pyannote, PEFT, GGUF,
+Hydra/OmegaConf, NVIDIA monitoring.
+
+**Knowledge demonstrated:** video/image/audio/TTS inference surfaces, checkpoint
+management, low-VRAM modes, attention/runtime compatibility, post-processing,
+headless/API execution, and compiled-extension ABI investigation.
+
+**Evidence:** [`Wan2GP/README.md`](Wan2GP/README.md) ·
+[`Wan2GP/requirements.txt`](Wan2GP/requirements.txt)
 
 </details>
-
-<a id="principles"></a>
-
-## Operating principles
-
-| Principle | Engineering consequence |
-| :--- | :--- |
-| **Start with the business constraint** | Make cost, latency, delivery scope, and operational trade-offs explicit |
-| **Make boundaries enforceable** | Treat tenant isolation, permissions, and API contracts as system behaviour |
-| **Assume dependencies will fail** | Define timeouts, retries, fallbacks, circuit breakers, and degraded modes |
-| **Make repeated work safe** | Design for idempotency, duplicate delivery, replay, and reconciliation |
-| **Observe the actual workflow** | Trace stages, queue depth, latency, provider failures, and recovery |
-| **Design the handover** | Include deployment procedures, runbooks, rollback, and restore workflows |
 
 <details>
-<summary><b>The questions behind my architecture reviews</b></summary>
+<summary><strong>AI Avatar video pipeline</strong></summary>
 
-<br />
+**Depth:** Prototype-to-working GPU media pipeline with meaningful lifecycle
+and orchestration design.
 
-```text
-[01] What is the failure domain?
-[02] Which component owns the authoritative state?
-[03] What happens when this operation runs twice?
-[04] Where is the tenant boundary enforced?
-[05] What happens when the model or provider is unavailable?
-[06] How do we bound concurrency, latency, and cost?
-[07] What evidence will explain a failure?
-[08] How do we roll back, replay, restore, or reconcile?
-[09] Can another team operate this after handover?
-```
+**Stack:** Python, FastAPI, CUDA/GPU workers, SadTalker, Wav2Lip, MuseTalk,
+LivePortrait, EchoMimic, FFmpeg.
+
+**Knowledge demonstrated:** interchangeable animation backends, TTS and lip-sync
+stages, persistent warm workers, VRAM lifecycle management, startup/shutdown model
+loading, and media artifact production.
+
+**Truth boundary:** Present as inference and pipeline integration, not as model
+research or training.
 
 </details>
-
-## GitHub activity
 
 <details>
-<summary><b>View contribution activity and repository statistics</b></summary>
+<summary><strong>Claude SEO — agentic SEO analysis toolkit</strong></summary>
 
-<br />
+**Depth:** Broad automation/plugin engineering and evidence-led SEO methodology;
+categorically different from a production backend service.
 
-<a href="https://github.com/mrankitpanicker">
-<img width="495" src="https://streak-stats.demolab.com?user=mrankitpanicker&theme=github-dark-blue&hide_border=true" alt="Ankit Panicker's GitHub contribution streak" />
-</a>
+**Stack:** Python, Playwright, Beautiful Soup, Trafilatura, Google APIs,
+WeasyPrint, Matplotlib, OpenPyXL, structured skill/agent manifests.
 
-<br />
+**Knowledge demonstrated:** technical SEO, content and E-E-A-T, Schema.org,
+GEO, local/international/e-commerce SEO, sitemaps, Core Web Vitals, GSC/CrUX,
+AI citability, parallel specialist orchestration, security tests, and consistency
+validation.
 
-<a href="https://github.com/mrankitpanicker">
-<img width="495" src="https://github-readme-stats.vercel.app/api?username=mrankitpanicker&show_icons=true&theme=github_dark&hide_border=true&title_color=38BDF8&icon_color=38BDF8" alt="Ankit Panicker's GitHub statistics" />
-</a>
+**Evidence:** [`claude-seo/README.md`](claude-seo/README.md)
 
 </details>
 
-<a id="contact"></a>
+<details>
+<summary><strong>Developer Tools / FreeTools — privacy-first browser utilities</strong></summary>
 
-## Build the product. Plan for its operation.
+**Depth:** Working modern frontend and edge-delivery engineering.
 
-Available for **remote B2B product engineering and technical leadership
-engagements with UK and European teams**.
+**Stack:** React 19, TypeScript, Vite/Vinext, Tailwind, shadcn/Base UI, Vitest,
+fast-check, Cloudflare Workers/Wrangler, DuckDB WASM, FFmpeg WASM, Transformers.js,
+MediaPipe, ExcelJS, PDF.js, pdf-lib.
 
-My work spans:
+**Knowledge demonstrated:** browser-only processing, Web Workers, cancellation,
+memory guards, schema/data utilities, local media conversion, edge deployment,
+property-based testing, and privacy-by-architecture.
 
-- **Product architecture and delivery:** From requirements to deployed applications.
-- **AI and voice systems:** Streaming workflows, integrations, orchestration, and evaluation.
-- **Platform reliability:** Distributed workers, recovery paths, observability, and operational tooling.
-- **Technical leadership:** Architecture decisions, engineering trade-offs, and maintainable delivery.
+**Evidence:** [`devtoolsfree/README.md`](devtoolsfree/README.md) ·
+[`freetools/README.md`](freetools/README.md)
 
-[![Email](https://img.shields.io/badge/EMAIL-ankit%40aimsystem.in-0369A1?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ankit@aimsystem.in)
-[![LinkedIn](https://img.shields.io/badge/CONNECT_ON_LINKEDIN-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/ankit-panicker/)
+</details>
 
-**[AIM Systems](https://aimsystem.in/)** ·
-**[APEX Connect](https://aimstudio.co.in/)** ·
-**[Portfolio](https://theankitpanicker.web.app/)**
+<details>
+<summary><strong>AIM and portfolio websites</strong></summary>
+
+**Depth:** Strong frontend delivery and visual composition; these projects do
+not establish backend or distributed-systems depth on their own.
+
+**Stack:** React, Next.js, Vite, TypeScript, Tailwind, Three.js, React Three
+Fiber, Motion, HLS.js, Firebase Hosting, Cloudflare/Azure static delivery.
+
+**Knowledge demonstrated:** component systems, route-based code splitting,
+responsive layouts, animation, 3D/web graphics, media-aware pages, deployment,
+SEO fundamentals, and lead-capture integrations.
+
+**Evidence:** [`websites/aim-engineering/README.md`](websites/aim-engineering/README.md) ·
+[`websites/aim---automated-impact-marketing/package.json`](websites/aim---automated-impact-marketing/package.json)
+
+</details>
+
+<details>
+<summary><strong>Local voice agent and vibeclone experiments</strong></summary>
+
+**Depth:** Prototype engineering; useful evidence of exploration, not product
+maturity.
+
+**Stack:** Python, FastAPI, Redis, RedisVL, Whisper, Kokoro/gTTS, local LLM
+endpoints, threaded audio queues, voice-generation workers.
+
+**Knowledge demonstrated:** streaming microphone capture, audio quality gates,
+vector memory with fallback, local inference, API/worker separation, and TTS
+experimentation.
+
+</details>
+
+<details>
+<summary><strong>LinkedIn profile scraper</strong></summary>
+
+**Depth:** Earlier working library/service engineering.
+
+**Stack:** TypeScript, Puppeteer, Express, Jest.
+
+**Knowledge demonstrated:** typed extraction models, authenticated browser
+sessions, blocked-host handling, persistent browser reuse, and JSON service
+wrapping.
+
+</details>
+
+<details>
+<summary><strong>Claude4SaaS / SaaS Agent engineering harness</strong></summary>
+
+**Depth:** Development-process automation and platform-governance tooling, not
+an end-user runtime product.
+
+**Stack:** Bash, PowerShell, Markdown/manifest systems, Git hooks, CI workflows,
+agent/skill orchestration.
+
+**Knowledge demonstrated:** idempotent installation, backup-aware migration,
+architecture controls, security gates, release-readiness checks, AI evaluations,
+context handoff, and bounded agentic verification loops.
+
+**Evidence:** [`SaaS Agent/README.md`](SaaS%20Agent/README.md)
+
+</details>
+
+---
+
+## Engineering practices
+
+| Area | Applied knowledge |
+|---|---|
+| **Architecture** | Clear control/data/media planes, loosely coupled services, durable asynchronous boundaries, explicit ownership of state transitions |
+| **API design** | Typed validation, authentication, versioning awareness, SDK/CLI consumers, timeouts and stable error behavior |
+| **Reliability** | Retries, breakers, backpressure, WAL, idempotency, DLQs, replay, reconciliation and graceful shutdown |
+| **Security** | Tenant isolation, RBAC, secrets management, protected paths, audit chains, SSRF defenses and least-privilege thinking |
+| **Observability** | Metrics, traces, structured logs, stage timing, queue health, alerts, dashboards and synthetic probes |
+| **Delivery** | Containers, CI/CD, infrastructure as code, health gates, rollback, backup and restore validation |
+| **Testing** | Unit through E2E plus load, stress, chaos, fault injection and non-deterministic AI evaluation |
+| **Cost/performance** | Concurrency limits, warm models, route-level splitting, local/browser execution, provider routing and right-sized infrastructure |
+| **Documentation** | Architecture maps, runbooks, failure handling, deployment instructions, evidence tiers and known limitations |
+
+---
+
+## Knowledge boundaries
+
+Professional depth is clearer when the boundaries are explicit.
+
+### Defensible claims
+
+- End-to-end AI systems and platform ownership
+- Production-oriented Python/FastAPI and Redis engineering
+- Multi-tenant voice and SaaS architecture
+- Distributed worker reliability and recovery patterns
+- Real-time STT/LLM/TTS integration
+- Docker-based deployment and working AKS/Terraform experience
+- Observability, testing, incident diagnosis, and rollback thinking
+- GPU inference pipeline integration and runtime troubleshooting
+
+### Claims requiring qualification
+
+- **AI/ML:** model integrator and orchestrator, not foundation-model trainer.
+- **Kubernetes:** able to deploy and operate application workloads; not claiming
+  deep cluster-internals specialization.
+- **Terraform:** working/intermediate infrastructure-as-code capability.
+- **Security/compliance:** implemented controls and compliance-oriented design;
+  no certification claim without external evidence.
+- **Performance:** benchmark results are not production traffic measurements.
+- **Deployment:** repository assets do not prove a service is currently live;
+  runtime state must be rechecked.
+- **Large upstream repositories:** dependency or model presence is not equivalent
+  to personal implementation depth in every component.
+
+---
+
+## Compact professional stack
+
+> **Python, FastAPI, TypeScript, React, Node.js, Go, Redis, PostgreSQL, MySQL,
+> Docker, Kubernetes/AKS, Terraform, Azure, Cloudflare, GitHub Actions,
+> OpenTelemetry, Prometheus, Grafana, Asterisk/PJSIP, WebSockets, STT–LLM–TTS,
+> RAG, FFmpeg, PyTorch, CUDA, Playwright, multi-tenant SaaS, offline-first
+> systems, queues/workers, WAL, idempotency, circuit breakers, chaos testing,
+> recovery, and production reliability engineering.**
+
+### Positioning statement
+
+> I design and build AI-enabled platforms end to end—from API and orchestration
+> layers to distributed execution, tenant isolation, observability, deployment,
+> and recovery. My primary depth is in Python/FastAPI, Redis-based distributed
+> systems, real-time voice AI, multi-tenant SaaS, and reliability engineering.
 
 ---
 
 <div align="center">
 
-**ANKIT PANICKER**
+**The model is one component. The product is the system around it.**
 
-*Architecture to production. Ownership through operations.*
-
-[↑ Back to top](#top)
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:0C4A6E,100:075985&height=100&section=footer" alt="" />
+<sub>Evidence-oriented technology profile · Generated from inspected repositories under E:\Projects · 2026-09-06</sub>
 
 </div>
