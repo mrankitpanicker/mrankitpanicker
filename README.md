@@ -2,8 +2,6 @@
 
 <div align="center">
 
-# ANKIT PANICKER
-
 ![Animated name](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=34&duration=2600&pause=2200&color=38BDF8&center=true&vCenter=true&width=850&height=85&lines=Ankit+Panicker;CTO+%26+AI+Systems+Architect)
 
 ### CTO & AI Systems Architect · AIM Systems
