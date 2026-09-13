@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Animated name](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=34&duration=2600&pause=2200&color=38BDF8&center=true&vCenter=true&width=850&height=85&lines=Ankit+Panicker;CTO+%26+AI+Systems+Architect)
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,17,22&height=220&section=header&text=ANKIT%20PANICKER&fontSize=52&fontColor=38BDF8&animation=fadeIn&fontAlignY=38&desc=CTO%20%26%20AI%20Systems%20Architect%20%C2%B7%20AIM%20Systems&descAlignY=58&descSize=18&descColor=7DD3FC" alt="header banner" />
 
 ### CTO & AI Systems Architect · AIM Systems
 
@@ -84,34 +84,6 @@ const ankitPanicker = {
 | **Product engineering** | Frontend applications, backend services, integrations, SDKs, CLI tools, and MCP |
 | **Platform reliability** | Bounded concurrency, backpressure, circuit breakers, and graceful degradation |
 | **Operations** | Telemetry, incident diagnosis, deployment checks, rollback, and restore workflows |
-
-```text
-BUSINESS REQUIREMENTS
-         |
-         v
-PRODUCT & SYSTEM ARCHITECTURE
-         |
-         +--- Experience
-         |    Frontend / workflows / offline behaviour
-         |
-         +--- Interfaces
-         |    APIs / SDKs / CLI / MCP
-         |
-         +--- Services
-         |    Data / tenancy / permissions / orchestration
-         |
-         +--- AI runtime
-         |    Models / streaming / evaluations / fallbacks
-         |
-         +--- Execution
-         |    Queues / workers / concurrency / recovery
-         |
-         +--- Platform
-              Containers / delivery / secrets / telemetry
-         |
-         v
-DEPLOY ---> OBSERVE ---> OPERATE ---> IMPROVE
-```
 
 <a id="technology"></a>
 
@@ -280,6 +252,17 @@ A reference architecture for asynchronous AI and business workflows:
 explicit admission decisions, durable execution, bounded concurrency,
 and recoverable failure paths.
 
+**Live particle-flow render** (renders and animates directly on GitHub, no JS required):
+
+<div align="center">
+
+<img src="assets/pipeline-flow.svg" width="100%" alt="Animated request pipeline: admission, queue, worker, AI service, result, with a dashed retry/recovery loop" />
+
+</div>
+
+<details>
+<summary><strong>Full decision-tree version (Mermaid)</strong></summary>
+
 ```mermaid
 flowchart TB
     subgraph ADMISSION["01 / ADMISSION"]
@@ -352,6 +335,8 @@ flowchart TB
     style RECOVERY fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
     style COMPLETION fill:#080F1D,stroke:#1E3A5F,color:#BAE6FD
 ```
+
+</details>
 
 ### The engineering contract
 
@@ -476,6 +461,11 @@ THE QUESTIONS BEHIND MY ARCHITECTURE REVIEWS
 
 [![GitHub statistics](https://github-readme-stats.vercel.app/api?username=mrankitpanicker&show_icons=true&theme=github_dark&hide_border=true&title_color=38BDF8&icon_color=38BDF8)](https://github.com/mrankitpanicker)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mrankitpanicker/mrankitpanicker/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/mrankitpanicker/mrankitpanicker/output/github-contribution-grid-snake.svg" />
+</picture>
+
 [View my GitHub profile and native contribution history →](https://github.com/mrankitpanicker)
 
 <a id="contact"></a>
@@ -509,5 +499,7 @@ engagements with UK and European teams**.
 *Architecture to production. Ownership through operations.*
 
 [↑ Back to top](#top)
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,17,22&height=100&section=footer" alt="footer wave" />
 
 </div>
